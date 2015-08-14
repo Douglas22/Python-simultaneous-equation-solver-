@@ -1,0 +1,19 @@
+# Python-simultaneous-equation-solver-
+#n1x + n2y = n3
+#n4x + n5y = n6
+n1 = int(input())
+n2 = int(input())
+n3 = int(input())
+n4 = int(input())
+n5 = int(input())
+n6 = int(input())
+# n1*n4 x + n2*n4y = n3*n4
+# n4*n1 x + n5*n1y = n6*n1
+# n2*n4y - n5*n1y = n3*n4 - n6*n1
+# y = n3*n4 - n6*n1/(n2*n4 - n5*n1)
+y = n3*n4 - n6*n1/(n2*n4 - n5*n1)
+x = (n3 - n2*y)/n1
+s1 = str(x)
+s2 = str(y)
+print 'x = ' + s1
+print 'y = ' + s2
